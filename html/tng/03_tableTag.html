@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  table, td, th {
+			border: 1px solid #ccc;
+		}
+		td, th {
+			padding: 10px 20px;
+		}
+</style>
+</head>
+<body>
+  <!-- table tag: parent-->
+   <!-- tr tag: table row-->
+    <!-- td tag: table column -->
+     <!-- th tag : table heading column -->
+      <table>
+        <caption>성적표</caption>
+        <!-- tHead > tBody > tFoot tags: defining a table structure 
+        *doesn`t do anything on outcome -->
+        <thead>
+          <tr>
+            <th>반</th>
+            <th>이름</th>
+            <th>국어</th>
+            <th>영어</th>
+            <th>수학</th>
+            <th>과학</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">1반</td>
+            <td>홍길동</td>
+            <td>70점</td>
+            <td>80점</td>
+            <td>90점</td>
+            <td>100점</td>
+          </tr>
+          <tr>
+            <!-- <td>1반</td> -->
+            <td>이기영</td>
+            <td>30점</td>
+            <td>50점</td>
+            <td>97점</td>
+            <td>86점</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">평균</td>
+            <!-- <td></td> -->
+            <td>30점</td>
+            <td>50점</td>
+            <td>97점</td>
+            <td>86점</td>
+          </tr>
+        </tfoot>
+      </table>
+</body>
+</html>
