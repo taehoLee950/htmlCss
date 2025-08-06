@@ -1,0 +1,51 @@
+/* 블럭 레벨요소
+1. 혼자 한줄 다 차지함
+2. 크기를 조절해서 위로 올라갈 공간이 충분한것 처럼 보이나 올라가지 않는다.
+3. 크기 조절은 가능하다.
+ */
+
+ /* 
+ 인라인 레벨요소
+ 1. 컨텐츠 크기만큼만 크기가 고정된다.
+ 2. 그래서 크기 조절이 안된다.
+ 3. 공간이 충분하면 위로 올라온다.
+ */
+
+.div{
+  border: 1px solid black;
+  
+}
+.div-box{
+  /* display: inline; */
+  width: 100px;
+}
+
+span{
+  display: inline-block;
+  width: 100vw;
+  height: 50vh;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* vw, vh (뷰포트 기준 단위) : 뷰의 크기에 따라 비율로 설정 단위 */
+/* % : 부모 요소의 크기에 따라 비율로 설정 */
+.div-parent{
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
+
+.div-child{
+  border: 1px solid red;
+
+}
+body{
+  padding: 10px;
+}
+.div-margin{
+  margin: 20px;
+  background-color: red;
+  /* 수평, 수직, 흐림, 번짐, 색상, 그림자 방향 */
+  box-shadow: 10px 10px 10px 10px black  ;
+}

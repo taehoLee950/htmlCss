@@ -1,0 +1,20 @@
+.div-border-style{
+  /* border-style : 테두리의 형태를 지정하는 속성 */
+  border-style: solid;
+  /* border-width : 테두리의 두께 조정 */
+  /* 1개 지정 : 사방 테두리 지정 */
+  /* 2개 지정 : 상하 - 좌우 */
+  /* 3개 지정 : 상 좌우 하  */
+  /* 4개 지정 : 상 우 하 좌 (시계 방향) */
+  border-width: 5px 15px 15px;
+
+  /* border-color : 테두리 색 지정 */
+  /* border-color : #12341; */
+
+  /* border : 테두리 두께, 속성, 색상을 한번에 지정 */
+  border: 5px solid #001020;
+
+  /* border-radius : 테두리의 모서리를 둥글게 처리 */
+  border-radius: 10px;
+
+}
