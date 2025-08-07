@@ -1,0 +1,28 @@
+.container{
+  border: 1px solid black;
+  width: 90vw;
+  height: 90vh;
+  margin: 0 auto;
+}
+.border-line{
+  border: 1px solid black;
+}
+.box-size{
+  width: 200px;
+  height: 200px;
+}
+.position1{
+  position: relative;
+  left: 50px;
+  top: 30px;
+}
+.position2{
+  position: absolute;
+  top: 150px;
+  left: 300px;
+}
+.position3{
+  position: absolute;
+  top: 500px;
+  
+}
