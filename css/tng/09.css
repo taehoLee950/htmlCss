@@ -1,0 +1,51 @@
+.container{
+  background-color: white;
+  width: 80%;
+  height: 95%;
+  /* height: 90vh; */
+  text-align: center;
+  margin: auto;
+  /* border: 3px solid red; */
+}
+.header{
+  background-color: #064106;
+  color: white;
+  margin: auto;
+  height: 90px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+}
+.subHeader{
+  font-style: italic;
+  font-weight: bold;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+body{
+  background-color: black;
+}
+.contentHeader{
+  color: red;
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 20px;
+}
+.contentList{
+  list-style: none;
+  line-height: 30px;
+  text-align: left;
+  padding-left: 40px;
+}
+.div-background-img{
+  width: 100%;
+  height: 300px;
+  background-image: url(../../img/beluga.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  
+}

@@ -1,0 +1,32 @@
+.background-test1{
+  background-color: #7fffd4;
+  border: 3px dotted #000;
+  background-clip: content-box;
+  padding: 10px;
+}
+.div-background-img{
+  width: 1000px;
+  height: 1000px;
+  background-image: url(../img/coding.jfif)
+}
+body{
+  border: 3px solid red;
+  background-image: url(../img/beluga.jpg);
+  /* 스크롤이 생길경우 요소의 배경 이미지를 고정 시키는 옵션이다 */
+  background-attachment: fixed;
+  /* 배경 이미지의 크기 조절 */
+  /* background-size: contain; */
+  /* background-size: cover; */
+  background-size: 200px;
+  /* 배경 이미지의 반복 방법 조절 */
+  background-repeat: repeat;
+  /* 배경 이미지 위치 조절 */
+  /* background-position: ; */
+  /* opacity: 0.3; */
+}
+.div-gradation{
+  width: 500px;
+  height: 500px;
+  /* background: linear-gradient (45deg, #000, #fff 20%) */
+  background: radial-gradient , #000, #fff 20%
+}

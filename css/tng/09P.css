@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+}
+ul, li{
+  list-style: none;
+  margin: 10px 0px 10px 20px;
+}
+.container{
+  width: 600px;
+  height: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  background-image: url(../../img/beluga.jpg);
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  background-position: right 0 bottom 0;
+  background-clip: content-box;
+}
+
+.header-title{
+  background-color: #4d6768;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+.sub-title{
+  margin: 20px 0;
+  text-align: center;
+  font-style: italic;
+}
+.contents-title{
+  color: red;
+}
