@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./selfPractice_10.css">
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>I want YOU!</legend>
+      <div class="user-info">
+        <label for="name">이름</label>
+        <input type="text" name="name" id="name" required>
+      </div>  
+      <div class="user-info">  
+        <label for="age">나이</label>
+        <input type="number" name="age" id="age" min="20" required>
+      </div>
+      <div class="gender-select-box">
+        <span>성별</span>
+        <input type="radio" name="gender" id="male" required>
+        <label for="male">남자</label>
+        <input type="radio" name="gender" id="female" required>
+        <label for="female">여자</label>
+      </div>
+      <div class="user-comment-container">
+        <span>요청사항</span>
+        <textarea name="user-comment-input" id="user-comment-input" placeholder="요청 사항 입력"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">보내기</button>
+    </fieldset>
+  </form>
+</body>
+</html>

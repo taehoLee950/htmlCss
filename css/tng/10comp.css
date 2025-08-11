@@ -1,0 +1,78 @@
+.fieldset-bg-img{
+  background-image: url(../../img/beluga.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.legend-title{
+  color: #d60880;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.required-sign::before{
+  content: '*';
+  color: red;
+}
+
+.input-box{
+  margin-bottom: 10px;
+}
+
+.txt-request-memo{
+  width: 200px;
+  height: 120px;
+}
+
+/* vertical-align : baseline을 top이냐 bottom이냐로 결정함 */
+label{
+  vertical-align: top; 
+}
+
+/* initial = transparent */
+input, textarea{
+  background-color: initial;
+}
+
+.focus-border:focus{
+  border: 3px solid red;
+  outline: none;
+}
+
+/* 가상클래스 + 인접 형제 요소 */
+.chk-color:checked + label{
+  color: red;
+}
+
+/* 가상요소로 배경 반투명하게 넣기 */
+/* field-bg-img{
+  position:relative
+}
+
+.fieldset-bg-img::after{
+  background-image: url(../../img/beluga.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  z-index: -1;
+} */
+
+.btn-submit{
+  position: relative;
+}
+.btn-submit:hover::after{
+  content : '내용을 다시 한 번 확인해 주세요.';
+  position: absolute;
+  width: 300px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  top: 0;
+  left: 60px;
+}

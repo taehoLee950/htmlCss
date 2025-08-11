@@ -1,0 +1,44 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+fieldset{
+  width: 500px;
+  height: 500px;
+  background-image: url(../../img/belugaPng.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+legend{
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(173, 19, 122);
+}
+.red-symbol::before{
+  content: '*';
+  color: red;
+}
+.user-info input, textarea{
+  background-color: transparent;
+}
+.user-info input:focus{
+  border: 3px solid red;
+  outline: none;
+}
+textarea:focus{
+  border: 3px solid red;
+  outline: none;
+}
+input:checked + label{
+  color: red;
+}
+.user-comment-container{
+  display: flex;
+}
+.submit-button:hover::after{
+  content: '내용을 다시 확인해주세요';
+  background-color: black;
+  color: white;
+}
