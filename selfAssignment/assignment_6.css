@@ -1,0 +1,57 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  padding: 20px;
+}
+fieldset{
+  width: 800px;
+  height: 700px;
+  margin: 0 auto;
+  background-image: url(../img/uncleSam.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+legend{
+  color: magenta;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.user-info input:focus{
+  border: 3px solid red;
+  outline: none;
+}
+.user-info-gender input:checked + label{
+  color: red;
+}
+.user-info-gender span::before{
+  content: '*';
+  color: red;
+}
+textarea:focus{
+  border: 3px solid red;
+  outline: none;
+  width: 300px;
+  height: 300px;
+}
+.user-comment{
+  margin-top: 20px;
+}
+.user-comment span{
+  vertical-align: top;
+  margin-left: 10px;
+}
+.user-info label::before{
+  content: '*';
+  color: red;
+}
+input, textarea{
+  background-color: transparent;
+}
+
+/* 알게된 점 */
+/* input 과 label은 inline 속성이라 margin을 주려고 해도 안된다. 이거때매 개고생했다.  */
+/* color : 'color'은 text에만 적용된다. input 창을 배경과 동화시키고 싶으면 background-color를 사용하자. 이것도 개고생했따. */
