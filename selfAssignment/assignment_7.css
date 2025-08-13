@@ -90,15 +90,46 @@
 .main-items {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+  gap: 10px;
+  margin: 10px 0 0 10px;
 }
 
-.card {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 
 .card-img {
-  width: 300px;
   height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+/* 알게된 점 */
+/* grid 속성은 부모에 주는데 부모는 아는데 자식을 내가 자주 헷갈렸음. */
+/* 여기서 div parent의 자식은 div child 1개 뿐이다. 헷갈리지 말자. */
+/* <div parent>
+      <div child>
+        <div grandchild> 
+        
+        </div>
+      </div> */
+
+/* 고급선택자 > */
+/* > 는 자식요소를 지정하는건데 나는 자식 요소 안의 손자 요소를 자꾸 저거랑 엮어서 쓰려고 하다가 에러가 났다. 위에 div 참조해서 재각인 하자 */
+
+/* 고급선택자 +  */
+/* 이것은 형제 요소를 지정하는거지 자식요소를 지정하는게 아니다. */
+/* 예시 아래 */
+/* h1 + span */
+/* <h1>this is h1</h1> */
+/* <span>this is </span> /// 가능 !*/
+
+/* h1 + span  */
+/* <h1>this is h1</h1> */
+/* <div>this is div
+     <span> this is span </span>
+    </div>  /// 잘못 됌*/
+
+/* 위 html 코드를 보면 내가 .card-img 에 width 값을 줬었는데 이렇게 하면 안됐다 */
+/* 왜냐하면 grid 속성을 줄 때 내가 minmax(width, 1fr) 를 미리 줘 놨기때문에  */
+/* 아래에서 이미 width값이 그리드로써 적용되어 있는 img에다가 다시 width값을 적용하는 꼴이 되었었다. */
+/* 그래서 width를 다시 지우고 height만 남겨놓으니 정상 작동하였다. */
+/* NOTE: grid 값을 설정해주는 요소들의 width값을 설정하기 전에 미리 grid로 통합적으로 선적용한게 있는지 꼭 확인하자! */
