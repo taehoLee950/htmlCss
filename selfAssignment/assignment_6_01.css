@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+/* side bar start */
+.sidebar-container {
+  color: white;
+  background-color: rgb(241, 86, 86);
+  padding-top: 30px;
+  height: 100vh;
+}
+
+.sidebar-header {
+  margin-bottom: 50px;
+  padding-left: 20px;
+}
+
+.sidebar-container ul {
+  list-style-type: none;
+  line-height: 30px;
+  list-style-position: inside;
+  padding-left: 20px;
+}
+
+.sidebar-container ul li {
+  margin-left: -20px;
+  padding-left: 20px;
+}
+
+.sidebar-container ul li:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.sidebar-container ul li:nth-child(1) {
+  margin-left: -20px;
+  padding-left: 20px;
+  background-color: rgb(240, 154, 154);
+  font-weight: 900;
+}
+
+/* main start here */
+.search-bar-container form {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 8px;
+}
+
+.search-bar-container .search-bar {
+  flex: 1 1 auto;
+  height: 40px;
+  margin-left: 20px;
+}
+
+form > button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: 900;
+  border: none;
+  background-color: rgb(103, 97, 197);
+  color: white;
+  line-height: 1;
+}
+
+form > button:hover {
+  cursor: pointer;
+}
+
+/* signboard here */
+.signboard-img {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+/* cards here */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
+  padding: 10px;
+  gap: 30px;
+}
+
+.cards-cell {
+  background-color: white;
+  border: 1px solid #fdf0f0;
+  padding: 5px;
+}
+
+.cards-cell > * {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.cards-cell > p {
+  font-size: 14px;
+}
+
+.cards {
+  width: 100%;
+  height: 200px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* aspect-ratio: 16/9; */
+  /* border: 1px solid black; TODO: DELETE THIS */
+}
+
+/* top-scroll button here */
+.toTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.top-btn-background{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #8e80dfc7;
+}
+
+.toTopBtn  a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+  z-index: 1;
+}
+
+.toTopBtn > a:hover {
+  cursor: pointer;
+}
+
